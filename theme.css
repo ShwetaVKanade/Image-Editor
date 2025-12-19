@@ -1,0 +1,18 @@
+:root {
+    /* Colors */
+    --bg-primary-color: #111;
+    --bg-secondary-color: #222;
+    --text-primary-color: #fff;
+    --text-secondary-color: #aaa;
+    --accent-color: #6200ea;
+    --button-bg: #333;
+    --button-hover: #444;
+    
+    /* Spacing */
+    --padding-sm: 10px;
+    --padding-md: 20px;
+    --gap-md: 20px;
+    
+    /* Border Radius */
+    --radius-md: 8px;
+}

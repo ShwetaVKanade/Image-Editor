@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="icon" href="/Picture12.png">
+</head>
+<body>
+    
+
+    <main>
+        <section>
+            <!-- Left Side -->
+            <div class="left">
+                <div class="top">
+                    <label for="image-input" class="btn">
+                        <i class="ri-upload-line"></i> Choose Image
+                        <input type="file" id="image-input" accept="image/*" hidden>
+                    </label>
+                    <button class="btn" id="reset-btn">Reset</button>
+                    <button class="btn" id="download-btn">Download <i class="ri-download-line"></i></button>
+                </div>
+                <div class="bottom">
+                    <div class="placeholder" id="placeholder">
+                        <i class="ri-image-add-line"></i>
+                        <p>No Image Selected</p>
+                    </div>
+                    <!-- The canvas is hidden initially in CSS or JS until image loads -->
+                    <canvas id="image-canvas"></canvas>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="right">
+                <h2>Filters</h2>
+                <div class="filters" id="filters-container"></div>
+                
+                <h2>Presets</h2>
+                <div class="presets" id="presets-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
